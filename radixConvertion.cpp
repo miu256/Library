@@ -6,7 +6,7 @@ using ll = long long;
  * Radix conversion of a certain decimal integer.
  *
  * You can choose any integer, including negative integers, as a decimal integer and a radix.
- * (NOTE) It do not support too big or too small integers.
+ * (NOTE) It do not support too big or small integers.
  *
  * @param N, B : N to be converted to radix, B is a radix.
  * @return A vector containing the value of each digit of the converted integer.
