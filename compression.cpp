@@ -14,7 +14,7 @@ using ll = long long;
 
 // CUT begin
 template<class T>
-map<T, int> Compression(vector<T> rawData) {
+map<T, int> compression(vector<T> rawData) {
     sort(rawData.begin(), rawData.end());
     rawData.erase(unique(rawData.begin(), rawData.end()), rawData.end());
     map<T, int> res;
@@ -30,7 +30,7 @@ int main() {
     vector<ll> A(N);
     for (int i = 0; i < N; i++)cin >> A[i];
 
-    auto res = Compression(A);
+    auto res = compression(A);
 
     for (int i = 0; i < N; i++)cout << res[A[i]] << " ";
     cout << endl;
